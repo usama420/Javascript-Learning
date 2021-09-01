@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+          <p class="user"></p>
+	    		<h1 class="title">Bookorama</h1>
+          <p>Books for Ninjas</p>
+					<div id="list"></div>  
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+	    	</div>
+	    </header>
+			
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+				<div class="preload">
+					<img src="./200w.gif" alt="">
+				</div>
+	    	<ul>
+					
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+				<input type="checkbox" id="hide"/>
+				<label for="hide">hide all books</label>
+	    	<input type="text" placeholder="Add a book..." />
+	    	<button>Add</button>
+	    </form>
+      <div id="add-user"> 
+	    	<input type="text" placeholder="email" id="email"/>
+        <input type="password" placeholder="password" id="password"/>
+	    	<button class="signup-btn">sign-up</button>
+        <button class="signin-btn">sign-in</button>
+        <button class="signout-btn">sign-out</button>
+	    </div>
+	</div>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDPUDVsw9HIRG-vEp5FvhjDCBp9_x449aQ",
+    authDomain: "bookaroma-e5c80.firebaseapp.com",
+    databaseURL: "https://bookaroma-e5c80-default-rtdb.firebaseio.com",
+    projectId: "bookaroma-e5c80",
+    storageBucket: "bookaroma-e5c80.appspot.com",
+    messagingSenderId: "407511858482",
+    appId: "1:407511858482:web:5880f9a7bdf294a7f72b2b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+		<!-- <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script> -->
+  </body>
+</html>
+
+
+
